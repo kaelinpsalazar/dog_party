@@ -31,27 +31,39 @@ li a {
   font-weight: bold;
 }
 .hero {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
   padding: 50px;
   background-image: url("assets/park.jpg");
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: darken; 
   color: #ffffff;
+ 
 }
-
 .hero h1 {
   font-size: 2.5em;
 }
+
 
 .hero img {
   border-radius: 50%;
   margin: 20px 0;
 }
-
+.hero input {
+  width: 125%;
+  padding: 10px 20px; 
+  border-radius: 12px; 
+  box-sizing: border-box; 
+}
 .hero form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  
 }
 
 .hero-image {
@@ -59,12 +71,16 @@ li a {
 }
 
 .hero button {
-  padding: 10px 20px;
+  width: 125%; 
+  padding: 10px 20px; 
   background-color: rgb(127, 227, 255);
   color: #000000;
   border: none;
   cursor: pointer;
+  border-radius: 12px;
+  box-sizing: border-box; 
 }
+
 
 .info {
   display: flex;
